@@ -34,7 +34,7 @@ namespace Hetao.Framework.Loger
             string path = string.Format("{0}/log",System.Environment.CurrentDirectory) ;
 
             //如果文件夹不存在，则创建
-            if (Directory.Exists(path))
+            if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
@@ -47,8 +47,8 @@ namespace Hetao.Framework.Loger
         {
             string filename = getLogFile();
 
-            List<string> contents=new List<string>();
-            contents.Add(string.Format("{0}    {1}",DateTime.Now,obj));
+            List<string> contents = new List<string>();
+            contents.Add(string.Format("{0}\t{1}",DateTime.Now,obj));
             try
             {
                 //写入文件

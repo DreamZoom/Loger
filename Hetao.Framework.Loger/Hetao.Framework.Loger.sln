@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hetao.Framework.Loger", "Hetao.Framework.Loger\Hetao.Framework.Loger.csproj", "{919A3E59-B531-4CB7-B28E-5BDC97F8715B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogerTest", "LogerTest\LogerTest.csproj", "{3B1A554C-DB12-4F30-994E-4D2ECCCDFD3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{919A3E59-B531-4CB7-B28E-5BDC97F8715B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919A3E59-B531-4CB7-B28E-5BDC97F8715B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919A3E59-B531-4CB7-B28E-5BDC97F8715B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1A554C-DB12-4F30-994E-4D2ECCCDFD3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1A554C-DB12-4F30-994E-4D2ECCCDFD3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1A554C-DB12-4F30-994E-4D2ECCCDFD3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1A554C-DB12-4F30-994E-4D2ECCCDFD3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

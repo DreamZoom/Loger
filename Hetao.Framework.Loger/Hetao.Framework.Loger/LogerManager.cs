@@ -10,11 +10,13 @@ namespace Hetao.Framework.Loger
     {
         private static ILoger _loger;
 
+        private static object _lockflag = new object();
+
         public static ILoger Current
         {
             get {
                 //线程同步
-                lock (_loger)
+                lock (_lockflag)
                 {
                     if (_loger == null)
                     {
@@ -25,7 +27,7 @@ namespace Hetao.Framework.Loger
             }
             set
             {
-                lock (_loger)
+                lock (_lockflag)
                 {
                     _loger = value;
                 }
